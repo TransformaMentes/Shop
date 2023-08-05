@@ -1,0 +1,415 @@
+
+body {
+    margin: 0;
+    padding-top: 60px; /* ajuste a altura do cabeçalho de acordo com suas necessidades */
+    background-color: #ffffff; /* Cor de fundo do corpo do documento */
+
+}
+  
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background-color: #ffffff; /* cor de fundo do cabeçalho */
+    z-index: 9999;
+    transition: box-shadow 0.3s; /* Adicionando transição à sombra do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra ao cabeçalho */
+    font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+    
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    text-shadow: 0 0 1px transparent;
+
+}
+
+
+h1, h3, h5, h6 {
+    margin: 0;
+    font-size: 24px; /* Ajustar o tamanho da fonte do cabeçalho */
+    font-family: "Libre Baskerville", sans-serif;
+    font-weight: 500; /* Aplicar negrito à fonte do cabeçalho */
+    color: #212326; /* Cor do texto "Courses" */
+}
+  
+
+
+p {
+    font-family: "Montserrat", sans-serif; /* Alterar a fonte da descrição das imagens */
+    color: #212326; /* Cor do texto "Courses" */
+}
+
+
+main {
+    margin-top: 60px; /* ajuste a margem superior para deixar espaço para o cabeçalho fixo */
+}
+  
+
+/* Remover o sublinhado e a cor azul dos links */
+a {
+    text-decoration: none;
+    color: inherit; /* Para herdar a cor do texto do elemento pai */
+}
+
+
+.courses-title {
+  margin-right: auto;
+  font-size: 40px;
+  font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+  font-weight: 500;
+  color: #212326; /* Cor do texto "Courses" */
+  text-shadow: 0 0 1px transparent;
+  text-rendering: optimizeLegibility;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+
+
+.mini-title {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+  font-weight: 600;
+  color: #6F7282; /* Cor do texto "Courses" */
+  text-shadow: 0 0 1px transparent;
+  text-rendering: optimizeLegibility;
+  margin-left: 200px;
+}
+
+.line {
+  width: 85%; /* Ajuste a largura da linha para 100% do espaço disponível */
+  border: 1px solid #6F7282; /* Estilo da linha - cor, espessura, etc. */
+  margin-bottom: 50px; /* Adicione uma margem inferior para espaçamento entre o texto e a linha */
+  background-image: linear-gradient(to right, transparent, #000000, transparent); /* Gradiente para criar efeito de sombra */
+  height: 0px;
+}
+
+
+.product-price {
+  font-size: 20px; /* Ajuste o tamanho da fonte do preço do produto */
+  color: #555; /* Cor do preço do produto */
+  font-weight: 700; /* Aplicar negrito ao preço do produto, se necessário */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* ajuste o número de colunas conforme necessário */
+    gap: 45px; /* espaçamento entre as células da grade */
+    padding: 10px;
+    margin: 0 200px; /* margem nas bordas laterais */
+}
+  
+.grid-item {
+    background-color: #fff; /* cor de fundo dos itens da grade */
+    border-radius: 5px; /* bordas arredondadas */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra à borda */
+    transition: box-shadow 0.3s, background-color 0.3s; /* Adicionando efeito de transição na mudança de cor */
+}
+  
+
+.grid-item img {
+    height: auto; /* Ajuste a altura da imagem para ocupar 60% do espaço disponível */
+    width: auto;
+    object-fit: cover; /* Para garantir que a imagem preencha todo o espaço, mantendo sua proporção */
+    object-position: top; /* Para alinhar a imagem ao topo do quadrado da grade */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+
+.grid-item:hover {
+    background-color: #dedc9890; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3); /* Aumentando a sombra ao passar o mouse */
+}
+
+
+.product-info {
+    margin-top: 10px;
+    flex: 1; /* Ocupar o espaço disponível restante da grade */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Ajustar o espaçamento interno do texto */
+
+}
+
+
+
+
+.social-icons {
+    text-align: center; /* Centralize os ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    margin-top: 50px; /* Adicione uma margem superior para espaçamento */
+}
+  
+.social-icons a {
+    color: #555; /* Cor dos ícones */
+    margin: 0 10px; /* Adicione espaçamento horizontal entre os ícones */
+}
+
+.line-rodape {
+  width: 79%;
+  height: 0px; /* Altura da nova linha - torna a linha mais grossa */
+  margin-top: 50px; /* Adicione margens superior e inferior para espaçamento */
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+
+  
+footer {
+    color: #ffffff; /* cor do texto do rodapé */
+    padding: 20px;
+    margin-top: -10px;
+}
+  
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+  
+
+.footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+  
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #000000; /* cor dos links do rodapé */
+}
+  
+
+/* Estilos base para tamanhos de tela maiores */
+/* Você pode ajustar os valores das media queries de acordo com suas necessidades */
+
+@media screen and (max-width: 1200px) {
+
+    .line {
+        width: 79%; /* Ajuste a largura da linha para 100% do espaço disponível */
+        border: 1px solid #6F7282; /* Estilo da linha - cor, espessura, etc. */
+        margin-bottom: 50px; /* Adicione uma margem inferior para espaçamento entre o texto e a linha */
+        background-image: linear-gradient(to right, transparent, #000000, transparent); /* Gradiente para criar efeito de sombra */
+        height: 0px;
+      }
+
+    .grid-item img {
+        height: auto;
+        width: auto; 
+    }
+
+
+}
+  
+@media screen and (max-width: 992px) {
+
+
+
+    .grid-item img {
+        height: auto;
+        width: auto; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 30px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto; 
+    }
+
+
+}
+  
+@media screen and (max-width: 768px) {
+    
+
+
+
+
+    .grid-item img {
+        height: auto;
+        width: auto; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 20px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto; 
+    }
+
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        align-content: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px; 
+        background-color: #ffffff; /* cor de fundo do cabeçalho */
+        z-index: 9999;
+        transition: box-shadow 0.3s; /* Adicionando transição à sombra do cabeçalho */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionando sombra ao cabeçalho */
+        font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+        
+    }
+
+
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    }
+
+
+    
+    .grid-item img {
+        height: auto;
+        width: auto; 
+    }
+
+    .grid-container {
+            grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
+            gap: 15px; /* espaçamento ainda menor entre os itens da grade */
+            margin: 0 20px; /* reduza a margem nas bordas laterais */
+            width: 250px;
+            margin-right: auto;
+            margin-left: auto;            
+    }
+    
+
+    main {
+        margin-top: 40px; /* ajuste a margem superior para deixar espaço para o cabeçalho fixo */
+    }
+
+    .courses-title {
+        margin-left: 100px;
+        font-size: 30px;
+        font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+        font-weight: 500;
+        color: #212326; /* Cor do texto "Courses" */
+        text-shadow: 0 0 1px transparent;
+        text-rendering: optimizeLegibility;
+        margin-left: 24px;
+        margin-bottom: 20px;
+    }
+
+    .mini-title {
+        margin: 0;
+        font-size: 15px;
+        font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
+        font-weight: 500;
+        color: #6F7282; /* Cor do texto "Courses" */
+        text-shadow: 0 0 1px transparent;
+        text-rendering: optimizeLegibility;
+        margin-left: 40px;
+        margin-bottom: -18px;
+    }
+
+    .line {
+        width: 0px; /* Ajuste a largura da linha para 100% do espaço disponível */
+        border: 1px solid #6F7282; /* Estilo da linha - cor, espessura, etc. */
+        margin-bottom: 40px; /* Adicione uma margem inferior para espaçamento entre o texto e a linha */
+        background-image: linear-gradient(to right, transparent, #000000, transparent); /* Gradiente para criar efeito de sombra */
+        height: 15px;
+        writing-mode: vertical-lr;
+        margin-left: 30px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+
+
+
+}
+  
+
+
+
+@media screen and (max-width: 425px) {
+
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
+        gap: 15px; /* espaçamento ainda menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;            
+    }
+
+    .grid-item img {
+        height: auto; 
+        width: auto;
+    }
+
+}
+  
+
+
