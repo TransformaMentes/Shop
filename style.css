@@ -62,7 +62,7 @@ a {
 
 
 .courses-title {
-  margin-right: auto;
+  margin: 0;
   font-size: 40px;
   font-family: "Libre Baskerville", serif; /* Alterar a fonte do cabeçalho */
   font-weight: 500;
@@ -87,7 +87,7 @@ a {
 }
 
 .line {
-  width: 85%; /* Ajuste a largura da linha para 100% do espaço disponível */
+  width: 79%; /* Ajuste a largura da linha para 100% do espaço disponível */
   border: 1px solid #6F7282; /* Estilo da linha - cor, espessura, etc. */
   margin-bottom: 50px; /* Adicione uma margem inferior para espaçamento entre o texto e a linha */
   background-image: linear-gradient(to right, transparent, #000000, transparent); /* Gradiente para criar efeito de sombra */
@@ -100,6 +100,7 @@ a {
   color: #555; /* Cor do preço do produto */
   font-weight: 700; /* Aplicar negrito ao preço do produto, se necessário */
 }
+
 
 
 .grid-container {
@@ -139,6 +140,8 @@ img {
     max-width: 100%;
     height: auto;
 }
+  
+
   
 
 .grid-item:hover {
@@ -225,18 +228,15 @@ footer {
 /* Você pode ajustar os valores das media queries de acordo com suas necessidades */
 
 @media screen and (max-width: 1200px) {
-
-    .line {
-        width: 79%; /* Ajuste a largura da linha para 100% do espaço disponível */
-        border: 1px solid #6F7282; /* Estilo da linha - cor, espessura, etc. */
-        margin-bottom: 50px; /* Adicione uma margem inferior para espaçamento entre o texto e a linha */
-        background-image: linear-gradient(to right, transparent, #000000, transparent); /* Gradiente para criar efeito de sombra */
-        height: 0px;
-      }
-
-    .grid-item img {
-        height: auto;
-        width: auto; 
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
     }
 
 
@@ -244,11 +244,20 @@ footer {
   
 @media screen and (max-width: 992px) {
 
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
+    }
 
 
     .grid-item img {
-        height: auto;
-        width: auto; 
+        height: 250px; 
     }
 
     .grid-container {
@@ -265,13 +274,22 @@ footer {
   
 @media screen and (max-width: 768px) {
     
+    .header-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        height: 100%;
+        text-rendering: optimizeLegibility;
+        text-shadow: 0 0 1px transparent;
+    
+    }
 
 
 
 
     .grid-item img {
-        height: auto;
-        width: auto; 
+        height: 250px; 
     }
 
     .grid-container {
@@ -318,25 +336,26 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: auto;
         height: 100%;
         text-rendering: optimizeLegibility;
         text-shadow: 0 0 1px transparent;
+    
     }
 
 
     
     .grid-item img {
-        height: auto;
-        width: auto; 
+        height: 250px; 
     }
 
     .grid-container {
-            grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
-            gap: 15px; /* espaçamento ainda menor entre os itens da grade */
-            margin: 0 20px; /* reduza a margem nas bordas laterais */
-            width: 250px;
-            margin-right: auto;
-            margin-left: auto;            
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 20px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto; 
     }
     
 
@@ -395,21 +414,22 @@ footer {
 
 @media screen and (max-width: 425px) {
 
-    .grid-container {
-        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para uma coluna em telas ainda menores */
-        gap: 15px; /* espaçamento ainda menor entre os itens da grade */
-        margin: 0 20px; /* reduza a margem nas bordas laterais */
-        width: 200px;
-        margin-right: auto;
-        margin-left: auto;            
+    .grid-item img {
+        height: 250px; 
     }
 
-    .grid-item img {
-        height: auto; 
-        width: auto;
+    .grid-container {
+        grid-template-columns: repeat(1, minmax(200px, 1fr)); /* altere para duas colunas em telas menores */
+        gap: 20px; /* espaçamento menor entre os itens da grade */
+        margin: 0 20px; /* reduza a margem nas bordas laterais */
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto; 
     }
 
 }
   
+
+
 
 
